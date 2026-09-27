@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pool Maintenance Enrollment | Contemporary Pool Works</title>
+<meta name="description" content="Enroll in ongoing weekly pool maintenance with Contemporary Pool Works after your 30 day brush and balance period.">
+<meta name="theme-color" content="#0c1626">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,560;9..144,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: dark;
+    --night:#0c1626; --deep:#070e1a; --panel:#122036; --line:#26364f;
+    --glow:#8fd8f7; --amber:#f4c66a; --paper:#f3f1ec; --muted:#9fb0c6; --error:#ff9b8f;
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --body:"Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--night);color:var(--paper);font:400 16px/1.55 var(--body)}
+  img{max-width:100%;display:block}
+  a{color:var(--glow)}
+  button{font:inherit;color:inherit}
+  :focus-visible{outline:2px solid var(--glow);outline-offset:3px}
+  [hidden]{display:none!important}
+
+  .hero{position:relative;min-height:clamp(380px,56svh,520px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;isolation:isolate}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.05);animation:drift 16s ease-out forwards}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,14,26,.6) 0%,rgba(7,14,26,.1) 30%,rgba(12,22,38,.55) 60%,var(--night) 100%)}
+  @keyframes drift{to{transform:scale(1)}}
+  .brand{position:absolute;top:calc(18px + env(safe-area-inset-top,0px));left:20px;background:#fff;border-radius:14px;padding:12px 18px}
+  .brand img{height:clamp(58px,16vw,84px);width:auto}
+  .hero-copy{padding:0 20px 28px;max-width:640px;width:100%;margin:0 auto}
+  .eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:0 0 12px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+  .hero h1{font:560 clamp(40px,11vw,72px)/.98 var(--display);letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance;font-variation-settings:"opsz" 144}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--glow)}
+  .hero p.lead{margin:0;font-size:17px;line-height:1.5;color:#dfe5ee;max-width:38ch;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .rise.d2{animation-delay:.1s}.rise.d3{animation-delay:.2s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+  main{max-width:640px;margin:0 auto;padding:18px 20px 72px}
+  h2{font:560 clamp(24px,6vw,30px)/1.1 var(--display);letter-spacing:-.01em;margin:36px 0 8px;text-wrap:balance}
+  .lede{color:var(--muted);margin:0 0 18px}
+  .field{display:grid;gap:8px;margin:0 0 18px}
+  label,.legend{font-weight:600;font-size:15px}
+  .hint{display:block;font-weight:400;color:var(--muted);font-size:14px}
+  input[type=text],input[type=tel],input[type=email],input[type=date],select,textarea{width:100%;font:inherit;font-size:17px;color:var(--paper);background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px}
+  input::placeholder,textarea::placeholder{color:#5f6f87}
+  textarea{min-height:140px;resize:vertical}
+  select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239fb0c6' stroke-width='2' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:42px}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--glow);box-shadow:0 0 0 3px rgba(143,216,247,.2)}
+  input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--error)}
+  .mono-input{font:500 28px/1 var(--mono)!important;letter-spacing:.38em;background:var(--deep)!important}
+  .row{display:grid;gap:0 14px}
+  @media (min-width:540px){.row{grid-template-columns:1fr 1fr}.row.three{grid-template-columns:2fr 1fr 1fr}}
+  .error{color:var(--error);font-size:14px;display:none}
+  .error.show{display:block}
+  button.primary,a.primary{display:block;width:100%;text-align:center;text-decoration:none;border:0;border-radius:999px;padding:16px 22px;font-weight:600;font-size:17px;background:var(--amber);color:#1b1405;cursor:pointer;margin-top:8px}
+  button.primary[disabled]{opacity:.6;cursor:progress}
+  .fine{font-size:13.5px;color:var(--muted);margin:14px 0 0}
+  .contact{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted);display:grid;gap:4px}
+  .contact b{color:var(--paper);font-weight:600}
+  .preview-flag{position:fixed;right:12px;top:calc(12px + env(safe-area-inset-top,0px));z-index:50;font:500 11px/1 var(--mono);letter-spacing:.08em;background:var(--amber);color:#1b1405;padding:8px 10px;border-radius:999px}
+  @media (prefers-reduced-motion:reduce){.hero img.bg,.rise{animation:none;transform:none}}
+
+  /* Weekly visit checklist */
+  .visit{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 20px 8px;margin:6px 0 0}
+  .visit .eyebrow{margin-bottom:14px}
+  .visit ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .visit li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;padding:11px 0;border-top:1px solid var(--line);font-size:15.5px}
+  .visit li:first-child{border-top:0;padding-top:0}
+  .visit li svg{margin-top:3px;color:var(--glow)}
+
+  /* Three step path */
+  .path{list-style:none;margin:30px 0 4px;padding:0;display:grid;gap:14px;counter-reset:s}
+  .path li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+  .path li::before{counter-increment:s;content:"0" counter(s);font:500 13px/40px var(--mono);letter-spacing:.06em;text-align:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);color:var(--amber);background:var(--deep)}
+  .path b{display:block;font-weight:600;margin-top:2px}
+  .path span{color:var(--muted);font-size:14.5px}
+
+  fieldset{border:0;margin:0;padding:0;min-width:0}
+  .choices{display:grid;gap:10px}
+  .choices.three{grid-template-columns:repeat(3,1fr);gap:8px}
+  .choices.three .choice{padding:14px 6px;text-align:center;font-size:15px}
+  .choices.three .choice input{position:absolute;opacity:0;pointer-events:none}
+  .choice{position:relative;display:block;border:1.5px solid var(--line);border-radius:12px;padding:15px 16px 15px 48px;cursor:pointer;font-weight:600;background:var(--panel);transition:border-color .15s,background .15s}
+  .choice input{position:absolute;left:16px;top:18px;width:18px;height:18px;margin:0;accent-color:var(--glow)}
+  .choice small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:3px}
+  .choice:has(input:checked){border-color:var(--glow);background:#15304a}
+  .choice:has(input:focus-visible){box-shadow:0 0 0 3px rgba(143,216,247,.25)}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  .done{display:none}.done.show{display:block;animation:rise .5s ease both}
+  .done .ref{font:500 clamp(24px,7vw,34px)/1 var(--mono);letter-spacing:.06em;color:var(--amber);background:var(--deep);border:1px solid var(--line);border-radius:12px;padding:18px;margin:8px 0 20px;display:inline-block}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="bg" src="img/hero.webp" alt="A clean Contemporary Pool Works pool and spa on a sunny afternoon" fetchpriority="high">
+  <div class="brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACxBAMAAACmWhExAAAAMFBMVEX////+//////7///3+//3o8Pez3PG2ttFbSYdBK3RAK3VAK3RAK3M/K3Q+KHI5I2/rVgTKAAAleElEQVR42u19fXgV1bnvb81O7KMlydpJwEchyWQHyAEEN0k0x/YgRLDe2gOilOIXKthr21PtPU348JyWc+6V+pHSxKt4+1Ru+fBie46tEkjsvSIJibSKERI2IHCCJJl8oFdIstcO2ApkZt0/1prZM7Nn7ySU5z6N3e8/2ZlZs9a7fuv9Wu9aswZIUpKSlKQkJSlJSUpSkpKUpCQlKUlJSlKSkpSkJCUpSUlKUpKSlKS/aCK234pq/jK0lCUqAN7xeiB6vwO3Z6oAjANN0aIAOpxPd8i/gQ6vBgPoiLliPmSr1dCsC+KnrayLDG1KkQdb9scc7AomU5aogLEhWmMHYpqxqgjEVpkIQKL3Lsn3P0aBtw/178hg8mrasXK//1sUfFN44Lc+8zKgFKsA0HZUXKJTRDX6jptUj+42986njgv8g27zobYjFlv++TAv9JRbPQzX+25kTv6pbmPrQA8NW2wtsZDhfU0FGfbn/P1Tiv1rwDeFm+vyZIPF1GrmbFMxwgAKisQlvTEMAP7Be8T/bTujVaV49FE/vWrCD8OnGJSbbr661eSo/Y7/dMdcdoqBfMv/aebufRY6Xd+/BoBPrbsRAIjxN9cDQOonHXeU74yp+67vvlv4ZdeVbsD422uA1PRaq9Kj/7sGKLhwBIDy1DYpBmEUt+10CaF+vKLwYZOtrbt/n2exNXXIFJ8wv2mDXQiJ/vH31oRPaeRb/ucg2zx8/5dtxQ/8Pg8w9r25DQCUcc/nAQAvFh2aegEJATROVxT+ff1AJmC0YA7kyBl33La6dbMKgLfAVw50m+VVFANATvsOAOAQ/yp/AnzFnlbDeZUCwCCKAeXr6yxY7s6az+AT/4hqSMag6r/4/ORqh1zr19635mADAPADiq8cNDoGVjsBQpszm6M3wI+tWv1LFeAt+C6Y6IhqFleQT89sobUqFOPncwAAN8zpBgCjsKcYAG54IRGAhB5e9WxfCJkmh+JP7nvfW90Akwf93bX4p2IpmxrCADBYoM0OAwjdFQYAHwN4OAa9STFXmeA6DBjTF1k6PLWVAb2yv+KBAfSj4DvNeD7Phv7R762uN3UW+rtPPrdTtQyV2U4LkLW2kp0z/ydpFU83yK4cfNL4l2AY4FqUrX5kPfkcjgAzWEsAACLBbgA49nAYALQZdsVSYhX4m2s3hWJgfbeiYrPt/0tbyle7Cun3lLPL9mVdHAB5TzXN42k/AxBrQ9sPXvvthbb/j1asarDzUF/+9F6v+vs3r73jkPlPxolrow/trXjCo3j9d0tzAbQtBgAcF2wpy4VCVCMBgCTtROnJGF9H9CVPN9q7o+S9u/4JzekNfleRQ/+8iICMNx2W8pAQsNgKz/yptMO6aix5xoXXuxX/2OXFhbqlvFzeoAPlj9sM1v7CkEf5g6tu0nCuJkuoQGoXAKMsDQAw+6yaSAI/LH98MKY6+klpg1tQ9xfOc17J+VLJ4cvGjgKAvlKqX8bd42KDBMlw38pVlqR7sjWHeLWQ927FXFnnJ1ObbDeGViz3Kr9v/SJw40VRaTkA0BJhYK7TEkmgvuDpbR4iXX5/zLWLy4pcQ7ejYs5lA2gAAPcvkmJRKHhNCXuU/V2FKQGGXZRMPJbdHvJsQv+8iEkH5ezM/imaV3T5yU0aJkbE78hdFDif1SpGtzYBgKT3jv5Yy0MLV++KFYWmn9zqVJa8z0u6LhdBYWxOSCP4GT0EABmesnTpS7Pk9U+meBi81oqF3k00rM/1A8D5UqeInCqf51G641TFIqAtCADk/+QC6MlQYk2gG0A6/wmP8VNK2/Njr6btL4m4TPyqhZdrBf3CI48X/3UvzxcO2ks2AjsLNSmAC2N9IPiJOMOY91kQANAz12nj1cFZnjOm/ZOp0kgBgKjjQ0DZchWAQfqCCQDUSz2Uxjg6z1MrOtZ3unj/5KbQZQJoiOZXHgYA4+4MW4wYQxNXLJQC6Nlav2ns3FQ7PgQAZTNd1497NmN0zg+R9I0aABi3AUa+CLimdSaSwBNqLE9+Wj7Ta1KG3MEfuHRsoGKR/7Lgk/Vw/0IAhE7dFi/IAgBl/2QASF/hrav8/Cxv4HMq5gIwit1d5OO9BF3JKVuUcSmiAoAxe54/ZUJImkAWH0Dj7qhH8hUXF88GABybEIpG98XFRdGhG++KZIz9lymCphX6WAXAz8tRMBZ7l+YBDcBnhTvtbM2OBofj4zARmQUgJTtkdlDqorHSu/h+1TSCODyLd+V5RIHumUhK4TZT1krGbWaYsOICgPn/sM8Edd4mhmsfNmOHixUNrrEbqjhgYz6rGACVpcVMKToPzpItXWPX1a5sTQXpmSMNCbVLeDEMGQtfWvmbbqD78UY7WxMeMdnSK/Z02x9Du5SZ49kAIVz80/PA89f+fQgAOLm1286WWRzjI0rNdgDAH7MjygP7AICcVeMDSHrycqR5+9ZrnR1A5knVh/6vmYFh79crOxgCP12zRwiucnyWW/j33xSd54R/akOqu92VRvng7ZgJHaDP/1fK9LIbRaDGwW3SvQkTHtocAAAlQgcjaXcwAe/AZ/cLtta+LfXpeHDQaoxsAnnspOgBz9RUdD8hKv/GjzWF6yoAMGqVJx+8jWvvFPPmoZXrVGPjTIFx+72DAGBMe4GyuADysgekrN38i5bXASBlCeg5U4N9963bAABT2DNysCPjY6LDigOWDeirBwDydeHV3m2yeQvA199oS8SZksZnz2XAzaYU20UjuOdw5tlHRHx4XO3G+amy1Gf3C7ZSLbYOj4/20dcX8ocLJ4naV/wsen3HBmDyYia8bHe0eJPfctL+edqMiAylfyRcv5JRlxdfAo2bZUW+q5trixhl+Z2vFaP7IRFAYsa6DQE/j2QMVJHykPSa64LMLYIXLS/dAQCpX5f/1jszm7zeloW0TOl7s2qJmAjHhsh7wK66QfzODuVber6wakMBMuxsDZWvi7YzdEpLWfVgEwAMkVlHzLEibQUZRst/bQKA44g2aOw18N0XhBxF0kHbHg8BQGSpSCi6TaATwBS/1Miv/qhWZWDoRCBMy9Ll3R0bAggDTJlRPUF0RPcvdumwMlTxcxMhkcjtiZcWtv9viQwZr83uXX4I3sns3fkPCquVCW7qec+pPQEOBqZMrJ4wTgUANRJN6wBKgFZNmClUH+DSX01/IYPhROysVUHA2Fwo6jmuHtH2CyN4IiA0n5zliB/G9MjwK6W6OhosDsyWnZveZiZtfdM+FWwo7+XGcPDry5nPEVNp9ZVgctIOgLnikYKtdTJaMMMy4BttJgq+ac2PmNGY0/tOPBuUqk8NWSVXAPBd8Ag4lRnNi6zfxkYZYA0IEDQ1PoBG2QPi7/RPbYqZclVIGo0Xw/JqeLB6o+k1Y7Qt57KSWmYPdP+8tJv3xSvFr4toAMApNGmZfa0vmg1y5Y2XBqSKOwJUjkPU6awAygBw5r4MABisyZaFrOnwpcdqAYCl1yKBBFIxlj07Ntoq7JJiGWyzYT9dDmke0a7sIpdyfNYxv+eKjZxmBKV3SaVijoDdUbbYjDO3me7WWWvj4RhJI4kC+1eiBk5EgkqLCgDnqkkiAKcKb1HQZp/tKQ/LeM0W4BGlVbDCyx0B1wgouvhldHR0dHR0aHKoTXXLVqLBvBYzAzplXlHSxK+v2KwdfLJ/+gp3sueI2V3FHTl5SroQO06AlBq7euefDSZyIkTUPu0Fx4RYpOZ8m/fZPGjk6MYcCsAg88yu+zb9sEkZPmmw1GpM/urXgJRo8ll/9A8ZVunP4ui6wYCHmwAgdWuTDeSwsV14NzLXIYJcZSLAVdJDU83kDIDUhDNz8VNGgqbrCScAMEVi7Qh1jDKBCgk7pGEGmyGGMT06yj+/JjAsgLyAiieMLCmxfRqITS+4f/bAsGqmUJQJb0j6nXmGsAhzo2xJUTZjmj89S4TksbVWHtejfnsSx55ySo9x23YA5STHt8U55KLB6bvsETjHSZH3suXPh5q3Nw2fOP3SmgODADBUKpXhGU11zDgOZx1OZJ5MJijRVAA5fU4tPxlsEnPqI45mLeOnPclFtH38OQA45W3CiY2fIRkJChPRpCYAUKFS1hyxtswEZoQcNmOwyUx9Rh9/o/TL+cMJIGvrH5SpeRFIk0zA4YnOPRyKdc7W/1YDhKkAMM7lLWoMTQUQAe2xN6vcJcw745tl5/T6BHbmtESCq4BSs900xUbvWfe8welERHpI63OUSBUscldsEY5VskvNK4Z3Iu7Qjj8CcMV2kSfK5zAZvPAmuXpJ65yig3NeLsIwJwPIGxyBowvTB6T0ASDGdstx3akl1HY53je6xJl6+iz+SoyM+N54afgwpTFGXeYlKO5atiafZEjxw1UyDHCbf7l+Tp2w3iyMyySkkRHEpOkrB6OjwPOiCe70fYkBlIYYHgbYt9MN4KDLPgN8YvO84dmLuIUqHYCI/KOZA3O+4AwzSZrMVyo1JluuceXWQNsf1D+RMpSmGeFhFx0Ijks5n84AYOikGbr4tjCWEEDDM0Cibs8e34i+8ZI6bPL5f7n+/1il5pLIJWusU0Wc6ZSvjvbjpUKSyIDZTsy4SuRsbHV0nC7/hjVTODkMh0NG+1FzsU/kD5QdJubuXKAbQBkGcubt90ZAE5vzh5uZcJcOKZEUZojhUeaes57uDMZoYsqCZRXmMmYfjS8/LtucunRtxWrhk0ln06A7wHFT6tLvVDwmhknjcua9UUrP9FDiiIcPP8cZzsK9sTE4TJFJMePhh1JmRkzmCE/XYtjTshcUPS1zitM1N9NRcgmJPnlB4TP9Zg4QaEwc7A9lLyh5VhYvkPGczAlCyziHkdhAqMPFlnbhcKr2jLdmD2ehL7og1qkm6+CaOYdU5G4+e+WDa9c+use8bRpgYzFxR3CaE1d9fvHMPWZ8elYlGGb3REFxUb0cY9Iu2TkploEKNjeNCECfV736YveD3AvAwYb1sxIzONjpjmNWmoOhhGrknrCuapnTt+NTX39Icuvb3CT7yKlbgalqBSCi0s4wk5lH4xYN3Ng3jIkJWxOhaR0iVmPSCMbkAmMAFON61FUj9QxpIbb/MOaU19z3U4fxcTsNjzhGCpzci4J8k1VvU0c+UjFEY+YMAKAsjK9GPVvrYm1wAntk7uFQJCQZTB0GwF1eybRLquwm9ZoSuHtIGqoTW0HORZNGQbEkpJtml12SLE6zbFyeF4S3aID0w+xWlxOmcT0fKWhTgUlmJD8skErVSGC2RyGGSFlwv2afy8mF+EiuI4Az5JxmyI3PpAO78hLHMdtzAEDZE7W5IdU0XG3iF6+TfJH8Tk9JyqNhIchdwW5H5XfHjxn673qBAzgj9g74yhLMhcUwvRBkowNQSvdHK3/gMfc6Tp2JnMIdAQCY9T/c49Z/brjJXA4A+AYsaPqQyoRMKDURAEjZovYOxnGyABb9JBgelGz9MduZMyyUqY8XYh+bUFWrApCR9PQnAaAwJz4yVXU3jlICh0TjAbLwSOzci0/pskkWOfaQYos17dQ3sriR6JusJnItdcrdfgMAdVdGr2kqaEx1PTe8OBtEhiM8C7YS5LTMzGZ4yO39L9ihppUAUivjAkhueSEYHomldOYdAYgtDTFF9EftW3b4bU+onjkGQBuxkQ5IspobUi+FVQDXdTNeowEAM2KH44Gq/DA4xCBfWmGfPVLlQTOnE/vYOudyxrxAIEH6khZV1YUxWgBPygl6oR0EQ2qDYxeCITdX+rbhChKDclIFEN4JLkIPD0tfUl2dAcB4RzCwf5YN4jS5wkAOxURsKdUb1FGwcv7lPfMwagDlNEdfscjm+240XWShrTefyIVcMnBFkIs2V8NkRpd5i7Mx+bVmlQHmahnnhVZOl/jflVmA7r0xtnNac2BErBhm8cHOUQOoNP5K/Nh/ky1cHzozSyrLE1Z3Ou7+vhnbB68Afr0CqAwA+quAelY1kwLjVWcY47v56lMyA3hGtKzfE90Sqi953IwjLWkzZlt5hBFRsTY63p3ZGBmpDFVEsYIi11TJrwtvNTMzXyqVpm+adiUEkETD3klhius1S3nt1RcXlyyY8/LPng/KGYbk5XeFZiionzA379rmytisSgs0IlZ8m8WU60QJuwwAJ5oP7S9c1OWnAIjhZ43CIJNJ37xdrEmmny43bbVrt+GoSCxratQKViYCUE4GNV5rTSVINCI2Nm16ufLH7/8sT9h20ijWGJScZbd3+FXAb5wuf1yApdnWflLDYvMEmzqi/dtEZiL5oyMUDWfKt+3HwvgO3ctkpm3pAO8xlwrrKpjYBlXxtNwGFbPV5jJgZFEbqAGkhmVXeQToQLBeCxt7lSJzpp/zh3HisZoYtgpsaz9E/1UOAOgr60Mj4kesYupk0ZHRA+irMb3/wbU/naKFiT/f/xabeCYoms55r0LpCJPM/LUNVoYxeLkSyLOfk7/eP6LYguacV+e+owKqrJdG4+RLv0WgwJJII/3kU4Kt3PfWZ7bGZ+tSl4j19ueNCMBLF8Rk6ERJXd7oJXDmK+Mkv3u/c3ErQNZceAtZO54yjczHz25imPBIi9mJW9Zftgbry6TYXbgXUHXTF3O935G2TLHFHgHHxGRwy4tmVe+t3cQwYcXB6CSMxaoVn6qNKI75YJ0GAHrFv16GCg81b5Tc84PnHvPzgV8uB1j3SzeYPnfrt/y8v9VkL7XqnRsvG0GzuzMBzN0bNcgHuXhlVc6P4/c612JL3/K1fD5grVP6ttbaH6oZlMHZ7pEoZUqjmKvzweX7Ru1EuFLjs2xn2hv1DS0qAD7jjOnBlJyW+j17zQh9YObZy8fPK/hiAJTGKg6YCwuJkk9fbrYyMXl7ftkQ3VPo2AYF6GIVxthfMjLVkM7m+JQuOloAwWb+96A9MS3uDlb/LhpwQDFfhEXW0JErg59JewEgt1W1ZdESpWZrfhXVbltp5eojjp5PEhGjMkLHOtQmxmWofB4bNYAwPijyKHR9l2e4nFWlXRng5JII9wFA2k57Qi+REFynebKVWeUMWJRqUYnuXzQSZgqkJzUGZ2L0ALKGFz1Y5u/7Ylc1DTLtIK6kApssCGEKe/LnRKqyziuSm3bQta5oyG2X/1Yykmx0py429SrHx2ujBxATmz22+SkNGzwEs+jH+64MgAqNqyvxXrUROd6cjzwm/MVVblhnyBRgbsWINEaqPIYqbr0MAH2v/8iDqVnVb8Zcu+q1g8ErA2A6YNdae4KBJ7TjRnXsQn7Kf+xxs6V8IPatDg0uH9F4SpXHH4OXASDPbfXY4MKua5vvGj3llrZ9V8qFiA0c2iHuSG0NH4vjuuaCGLbe6Hbn8VijqZRTyEgcq9xXjtD4rtEDCNLWXBLrAH1VP3rUWezvqjaqVwg/iJSL1/LHMEs/yhsutpSyqupYjKZJIC6Wj2ibxQy5XKDHe+0zIYDc93plQWy5r7Y+X2bv123Ve/KuFH5yB51i75zSJP1LYjs0sWpDmQO/yj1eK/tywV4ZXDgiHf5A6u57I8jgxJ4bw3Or8GxfyIkw79FB/rHF7GJWsLLZll8T57q86/gXJyywXbdd58ZcAyauRPY7B7LYnB6Lc2OGPPt6cS9WO9iy7eQW7e4CztX8XLRJxmu5jtNsiFXGxiY79updAICuqXIdSFXjaoPXyUUzqlD4cLhVVGq+yZvVhovfyWhhALJmf1q5+5ytug7AvqGhwylP3HWbOw/PusGqgLuyXQD0PNotfsF7+aegDdzGVvObqgdblLwi3/6p2KPJ6m5w82b7OU0TLIatDE6HnIsntjHWu1dG76P5E1YAOLM1fMCy0h2pFf7HKIAPGvs3KNF8hyIPw2qXr9TJI7P0HfK2PMPKvK24z846qMknzBLC6spzqg5o5q+PvLMpHanlmV8LAjiztd9+wJPZ7kchwCg1rx/QJgsdN95wljHZchYXbbo5sB9CFu/0tttF4NfuOr2tCIh3epv1eEc0eWJvLeZ0t2iSpcPdvu2xQGwF7igoZLEV8KhAUe1tBmwVO8t0eBUXbbo5GB5AEF2WKbJbdr/MYxVkXNk58J8ZBGUYQjIKaPj/T4sjADBJIwVQScLxZ85DkxAkAUwCmAQwCWCSkgAmAUwCmAQwSaOnFNe8PuHspUPV4o2DCtDM+M0MMBiZrfHuBgCj20hw9y+YHEnCO8riF3yrG0oRjXu7L4TT/y3+0+8fweT4M23egIL8RHf/gufCzlM71sZ95sJbSLjKnQ4g/tP6NxNzpKnDrtiSdvmjKMJHIBe6VhAtRmiLIk8XIe1WzsTf4lN5gvZ8l7E7a6gpXrnhznNiCZ+e9eePetpSSoAw+Ou+kWzIOb203/ZytL70Urf5i549Yl3s4XGrIssuHBk9gH/BdOJeP4AwUNBWqw5bWl9S1hc9fIRml8ijAIzCEjogT88/di8f1OJq6ZTbBkbQztgB0Lh7jRAWP69kg8OLYOnSq//FUsH+qasvNQt5KlrN6KfiVP35a8inWvwK/vPFPdoXSQJJf0g6/FXGumFFoxctf2f7d2pDijhIhl7VYHbZmN3/YQKjTjYvTP9ixoHGKxUj2GUV4x2yhThRDZAnzqWymDNY7KTSy4gD/7KphALoP5S3v+TosI6YODA8Q8+L46VSoIKTThUAJVrKaM6DGPsA+n7BAOKvaEx79F9HtytCCavilWly+H7AoAQAOU+1Rbvw1wQguVAJpMxPXd56w12h0T3JKMvkkEck8Xt+AIB3c5Vrfz5XY8kGpiiBwKTdu6F8nDvKJxuNtEeEYt9lUFCh3BSU/XUBCABKQcOrGNHubwedE5NWPi8dh0DmASDKcoPv++sDEHzSySAX27kI/M7pJaXwPMqf81qQuQAMAhoOsnThplOEABJCE+/FNslPaGy5lLEGIJROsxtUbwEm2wKc1nipG85yxKu8lKlhmUAhIDtkNa2OauIRbQEKMPYBRKOpNy1TloJHN+8YvUuBs/u8gmydgKhHABBwjR5VjwDGPHMju6OaDgTQAecXEsUtI+RZ/RgEEDAWfx+AsWw2oeHAT+X2nfRjq/yUh2mdR64hl8njWKfsXM7k2UWUkSEVQLq9GuP2jJqZdwTbuq0XyUnv0jeCDP7w6TXUz8PU/QbdmARQoPil0h+GQa7hVUIojlU8Gwb8z7FBz4mJ2OVLVN4ItQsA8kUKybjWXk1KSZ5Rd9+aZ6KJGP2b83JCDKR71bOcwf8LHBnrAJqZw97VT9QD8K3/6AgAGEueeVsB8F1js8dDHz3xYbammlv/UzUVSA3N2gWg9z57NT1PR/5jScXe8nVWoHS6tLRfA/q+ueZkN4B73TmasQegOUPzPV3fuwLGFnJTrQqQlNIWpYTyhhbHx0SshygnAEnlvm3GdjHLJeBaTDW4FBqft7WAWfnd9Pn/8GqmpuJ0aXtPGcWZ1ysOdLMxL4FkJ2Cs7OffeI5lrgwJxHp+sGXBy2GypuWPQQ8AGUABrlFtAIzf8wTQK+Joo9yqpkEDoMD3+IfBZ1TdxKdUUwbyOW57vOmrv2BkKtlf4hTBMSiB+SAGSO/U0Mct/4w7xuf8MXh+APrdRv517+9MTfkvO8d3xcyUfY3Q7/kBiGL4OCcdXyFQCAffp5KUCWY152cNDgAY5/9D27+3mWJOj77dct+9GSw9k/Uc3N2krFn/+8wxn84KMjDAl67d90EgsPuj4K7sMIDCJt/PagMTD9Cccq+n3gEFOFaofUNMJXPBQTVGgJ40yGrqssMAwIpuaa80j+ghRrmetbWWAVNDd7Z1B3KrNrpPmR+D68JTGbmkYvaD+eE6oOAQnZSlAaczMO2gCt/ejYR4vAySKz7EUmYAKqdIB1eWB3YAGWXLiawmRx548mFVlRUG8uPjd05sAwiokbGdQplI3C87jDEAKfGfpk1gSFMjvs0qgL2v4BEAykNaRh2AiRF+ziOU5gSYC1BcA3ykRgDAIIxjgEZ8mwGg8ZXOeaLonQeCqiWA93y/wHhRBT7jqVvBABqTgh1TABoaa29Z8n11mgY2tQt9GQA3zoHMgR9p+dsAcJwMfuiB3xDA0mGA5WngOK1SQpQuDmBqhPbdCHD9nErEi13pdVEve7p0n78KADQgzAEobSVbxzCAC24rXrq2dB8yagHCpou1VAZGwe+GnDxwambvXW6YqMBUjTKEaARMXwy1TwWIdj1jACYxefCV/TQwff7jyrRWVYROIvZpeXK3OlYB5NkLFhSX/M2D6K0GeqkI46BySlQMYJBwDkAJeZ+zcFE9DYAwvk/pFGCw6QBSqHnqM6dEIDMQXQrILtUU8/V3/R5CgfCXK2vH7ExEX0YRhh7C/WtVEG6mQy+pHwLI19TDKgB0WqegO6iT9jp7nQ+uAV0cVJ6jp8oDmmynrx7dpM15IYMByIPhn9MNYDAwhpMJ8oSBlC1HhEaJzIjQ16tYlhVmex37wCiyNYX6thEY21Wi5V4VmsNENZqspsv0N9zU+vIcViWSB+OIcvSmJq9c2VgCkFAQHiBX72KAYphzOlPjzI9OMsPDCyuN4ASEY4ADEUMEw/tUezUWlJ3m859NCKXIg10Yo+fW48C+/Jh3tMaSE8kMBPIDv3153UYCIGgPbhDNKcdf8KRQKOEq8kAeQS8VJe1gZzqRp1mPW2vIaAvq+39yx5L2mFTZGALQt7uysrKy/YMNeRzWd2IARqGAmbrM+S7v9Pwr+kpgEYaAccwgtxJOtsI1DorTe7PSJujyrBmlZjuG3n1y/trcLv+YVWFyoRIAEABD9KQKS7yGCSEHASADDKA8F5RQZbg3Ez98MESZXx7iNu2jh/fq9cuuqaZHx64NTIn/NuRw+CGPgBhl4ADY2UwGsvBDHmRAgu9J85BPo/+miuyVUk3X9IUOdj35nGtH15jdI81GV3yIAYvpwHQNQNg4poKK85oTVvOVD7W88WIBgFy395/enE9zfrm2CF8MAB3ftIS1mTLeTlfKKQNRKAMYy1RQhjRx3J69GpeA91a1LdYrxBQ5rOyuev+n52ejaf4XRAKtw9ook2KkAgBX7vKWqrNqlzolBAVQGg1QipxuAAjZirhPJL7zbA1BxDxBKzDj5XW7f7VYL1v0xQBQi+9svG6xMCaAgDcBwDmkgPEBBvtnnGJg97W+qG/HcevTDIOBiT97vw7HnfvexiqAhsW4HypAo98xpsTzdQqWrqVQkSngtZzka3Qf7OeekZjj4+keddKZoG47NE+Z9Fq7ejg78gVxIsR0wH0AuxjMsqDwUmGlUYFfaimPIPMqmTOwqlFjvmZ2fQdVDlHdf5etlqIWVSWdXwQAOYE81CiV5WpAp6nTZTHfaDER50ROczmMxTJtlWdVc1XIbRUoGGnYruzPBeDv6PADAGsk/IvhhSeZ+3MJ0TJEd7MJxAfpPJ2IUQc/xZAK4AbGKVUGAGCcbZtvRiwWfEYX+BQN0Jetlu7mFVfMOVYBpJxGVAKQ3gwN56DUgAvn4WcZQ57xNtOJIdBiQEQKI+NqRPXLarz2q7YF9UfnUXLsb9cvNOfazg8DjVUA2cncj0EBqmQI1zqgrwQATAhN1OLofEGe/PDhGXXXTIgviJ5M/1i43HTPNMRgDUVkFrjyhPnZ9jJXADBWAcxkmZ3jQwAre6igGoDxK/jnAThNtYzBODqvYYYGADRMfVoGggCyZDUoe7jA81T23JdwPJsBhMmFglzCvxgS2BjJKdf9fn026wrnARMjiMwkfqo8kR9+x/OJi0HVEJHKIEvPU4Wchl3VxNClPjr0qEYQ5n5CCU2/m9G+L0QcCH07Ble1tJyeELrzFACcDB67tr2ltTzs2+KdcugEFPHhN9KoAPLjYtFqvn7K66msliD8i5Bbqz+6sLXdOFYaur57zGZjnCp5Jnh08uru/Meb0mtVwNdKL61kHQVTQrN2eR6hpTAK8HduZABHBKDi42OTzgTrJq/uzn8wlOH9alzj9pz96pGMSM57pSmMVCw/lB4Zu17Y3kOl2t++bNVtzzSlVKsA0PFS5rGnFixb2JX+Ytgrr0CaDJBtcgmuFgbnZjX6slW3PROS1djmigwAwnoXNIq+M0F9bcmC+WvDvdWNbEwCyCkcX94mOU8tPnhsSQO55UA+AMxoLtb/sHQotETut4xxxRyaItMFRgSp22Q1M59afPCzJQ2+Ww6ozjnxLLHqN6ntVjAorT1o+c7aNX3afa5P5I4ZAGvO3+LEZFzzm8U5XVm3VdWJc0Lf2DA/2OIr+fd6CmDSmW9Xu8IS4+ffnic7P7FvQVm/mShsfrNY78qaV1XHABgv3XJKlGm7+dA+APDV/Po+DWj7zXz85u3NPQuqXCeVO75EOvn+uDmOvFcjIAk+Qf/Zpzj3z3GfvvbNT5FJE+SmaKK7nQAIHdi7zVHmwhD7ZE5+bf3b/v8LAJ+nnfv49D2+//nOyc8BKH86duSCs5Y0HGw4JMSLXPiw/tjn7moYgDS0ilbI+58d+0QM1Oet2yiUt/606KsFRRM3fHDhc8cXmMeME+GV7lcYfK/hORgbzFf7lba95U+iTe4xP1vpzv8rza+ZbymQT22VOapRXjOPnMwxK5CXZlRxPxBudm/TdwKYsiAe/xeGm1olfHroCiBYRNzOtfg12I+tVCZWAj75KRxfUcyUWAlYa8C+Ysa9qyk2D/GPVlwMDvBzEysXAPUxyzIprlFOHL3G17NBAJVXxL3Gk8CYFEEYAQA8bEfIzNHzxEtu4bjVRO9YVYi/XAnUe73H4/D1KfPit1mPxEtYLOHTBxkSncIeHuZukpKUpCQlKUlJSlKSkpSkJCUpSUlKUpKSlKQkJSlJSUpSkpKUpL9i+n+foFfAGa2YRAAAAABJRU5ErkJggg==" alt="Contemporary Pool Works"></div>
+  <div class="hero-copy">
+    <p class="eyebrow rise">After day 30</p>
+    <h1 class="rise d2">Keep it <em>swim ready.</em></h1>
+    <p class="lead rise d3">Your 30 day brush and balance gets the pool started. Weekly maintenance keeps the water right and the equipment protected from there.</p>
+  </div>
+</header>
+
+<main>
+  <section id="formSection">
+    <div class="visit">
+      <p class="eyebrow">Every weekly visit</p>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Water testing and chemical balancing</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Routine system checks and visual inspection</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Skimmer and basket cleaning</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Circulation, filtration, and sanitation monitoring</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Early identification of potential issues</li>
+      </ul>
+    </div>
+
+    <ol class="path" aria-label="How enrollment works">
+      <li><div><b>Send this request</b><span>Two minutes. No payment today.</span></div></li>
+      <li><div><b>We confirm your plan</b><span>Our maintenance team contacts you with pricing, your service day, and a start date.</span></div></li>
+      <li><div><b>Weekly service begins</b><span>Ideally the week your brush and balance ends, so there is no gap in care.</span></div></li>
+    </ol>
+
+    <form id="mt" novalidate>
+      <h2>Your information</h2>
+      <div class="row">
+        <div class="field">
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+          <div class="error" id="err-firstName">Enter your first name.</div>
+        </div>
+        <div class="field">
+          <label for="lastName">Last name</label>
+          <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+          <div class="error" id="err-lastName">Enter your last name.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          <div class="error" id="err-phone">Enter a phone number.</div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          <div class="error" id="err-email">Enter a valid email address.</div>
+        </div>
+      </div>
+
+      <h2>Pool address</h2>
+      <div class="field">
+        <label for="street">Street address</label>
+        <input id="street" name="street" type="text" autocomplete="address-line1" required>
+        <div class="error" id="err-street">Enter the street address.</div>
+      </div>
+      <div class="row three">
+        <div class="field">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" autocomplete="address-level2" required>
+          <div class="error" id="err-city">Enter the city.</div>
+        </div>
+        <div class="field">
+          <label for="state">State</label>
+          <input id="state" name="state" type="text" autocomplete="address-level1" maxlength="2" value="SC" required>
+          <div class="error" id="err-state">Enter the state.</div>
+        </div>
+        <div class="field">
+          <label for="zip">ZIP</label>
+          <input id="zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="10" required>
+          <div class="error" id="err-zip">Enter a 5 digit ZIP.</div>
+        </div>
+      </div>
+
+      <h2>Your pool</h2>
+      <fieldset class="field">
+        <span class="legend">Pool type</span>
+        <div class="choices three">
+          <label class="choice"><input type="radio" name="poolType" value="Concrete">Concrete</label>
+          <label class="choice"><input type="radio" name="poolType" value="Fiberglass">Fiberglass</label>
+          <label class="choice"><input type="radio" name="poolType" value="Vinyl liner">Vinyl liner</label>
+        </div>
+        <div class="error" id="err-poolType">Choose a pool type.</div>
+      </fieldset>
+
+      <fieldset class="field">
+        <span class="legend">Sanitizer</span>
+        <div class="choices three">
+          <label class="choice"><input type="radio" name="sanitizer" value="Salt">Salt water</label>
+          <label class="choice"><input type="radio" name="sanitizer" value="Chlorine">Chlorine</label>
+          <label class="choice"><input type="radio" name="sanitizer" value="Not sure">Not sure</label>
+        </div>
+        <div class="error" id="err-sanitizer">Choose one.</div>
+      </fieldset>
+
+      <fieldset class="field">
+        <span class="legend">Your 30 day brush and balance</span>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="brushBalance" value="In progress">Still in progress<small>Start weekly service when it ends</small></label>
+          <label class="choice"><input type="radio" name="brushBalance" value="Complete">Already complete<small>Start as soon as possible</small></label>
+          <label class="choice"><input type="radio" name="brushBalance" value="Not a CPW build">Not a CPW build<small>Your pool was built by another company</small></label>
+        </div>
+        <div class="error" id="err-brushBalance">Choose one.</div>
+      </fieldset>
+
+      <div class="field">
+        <label for="access">Gate code, pets, or access notes<span class="hint">Optional. Helps your technician on the first visit.</span></label>
+        <input id="access" name="access" type="text" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label for="notes">Anything else we should know?<span class="hint">Optional</span></label>
+        <textarea id="notes" name="notes" placeholder="Preferred service day, equipment questions, or anything you have noticed."></textarea>
+      </div>
+
+      <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+
+      <button class="primary" id="submitBtn" type="submit">Request enrollment</button>
+      <p class="fine">No payment is collected here. By sending this request you agree that Contemporary Pool Works may contact you by phone, text, or email about pool maintenance.</p>
+      <div class="error" id="err-submit">The request did not go through. Check your connection and try again, or call 803-403-1968.</div>
+    </form>
+  </section>
+
+  <section class="done" id="done" aria-live="polite">
+    <p class="eyebrow">Request received</p>
+    <h2 style="margin-top:0">You're on the list.</h2>
+    <p class="lede">Your reference number</p>
+    <div class="ref" id="refNo">MT-00000000-000</div>
+    <p>Our maintenance team will contact you to confirm pricing, your service day, and a start date.</p>
+    <p>A confirmation email is on its way to <b id="doneEmail"></b>.</p>
+  </section>
+
+  <div class="contact">
+    <b>Contemporary Pool Works</b>
+    <span>10020 Broad River Road, Irmo, SC 29063</span>
+    <span>803-403-1968 &nbsp;|&nbsp; info@cpoolworks.com</span>
+  </div>
+</main>
+
+<script>
+const ENDPOINT = "https://script.google.com/macros/s/AKfycby2wcknZHNUf_ZJgUFxW9t1EcY4KKq56mW_5RWCfvXeAZevFsoNwPYixlFi1chegunw/exec";
+/* Only the live site sends requests. Anywhere else (previews) the submit is simulated. */
+const LIVE = /(^|\.)cpoolworks\.com$|github\.io$/.test(location.hostname);
+const form = document.getElementById("mt");
+
+function setErr(id, bad, inputEl){
+  document.getElementById(id).classList.toggle("show", bad);
+  if (inputEl) inputEl.setAttribute("aria-invalid", bad ? "true" : "false");
+  return bad;
+}
+const picked = name => form.querySelector('input[name="' + name + '"]:checked');
+function validate(){
+  const v = id => document.getElementById(id);
+  let bad = false;
+  bad = setErr("err-firstName", !v("firstName").value.trim(), v("firstName")) || bad;
+  bad = setErr("err-lastName", !v("lastName").value.trim(), v("lastName")) || bad;
+  bad = setErr("err-phone", v("phone").value.replace(/\D/g,"").length < 10, v("phone")) || bad;
+  bad = setErr("err-email", !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v("email").value.trim()), v("email")) || bad;
+  bad = setErr("err-street", !v("street").value.trim(), v("street")) || bad;
+  bad = setErr("err-city", !v("city").value.trim(), v("city")) || bad;
+  bad = setErr("err-state", v("state").value.trim().length < 2, v("state")) || bad;
+  bad = setErr("err-zip", !/^\d{5}(-\d{4})?$/.test(v("zip").value.trim()), v("zip")) || bad;
+  bad = setErr("err-poolType", !picked("poolType")) || bad;
+  bad = setErr("err-sanitizer", !picked("sanitizer")) || bad;
+  bad = setErr("err-brushBalance", !picked("brushBalance")) || bad;
+  if (bad){
+    const first = form.querySelector('[aria-invalid="true"], .error.show');
+    if (first) first.scrollIntoView({behavior:"smooth", block:"center"});
+  }
+  return !bad;
+}
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  document.getElementById("err-submit").classList.remove("show");
+  if (!validate()) return;
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true; btn.textContent = "Sending";
+  try{
+    const fd = new FormData(form);
+    const payload = {
+      form: "maintenance",
+      firstName: fd.get("firstName").trim(),
+      lastName: fd.get("lastName").trim(),
+      phone: fd.get("phone").trim(),
+      email: fd.get("email").trim(),
+      street: fd.get("street").trim(),
+      city: fd.get("city").trim(),
+      state: fd.get("state").trim().toUpperCase(),
+      zip: fd.get("zip").trim(),
+      poolType: fd.get("poolType"),
+      sanitizer: fd.get("sanitizer"),
+      brushBalance: fd.get("brushBalance"),
+      access: (fd.get("access") || "").trim(),
+      notes: (fd.get("notes") || "").trim(),
+      website: fd.get("website") || "",
+      page: location.href
+    };
+    window.__lastPayload = payload;
+    let out;
+    if (LIVE) {
+      const res = await fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
+      out = await res.json();
+    } else {
+      await new Promise(r => setTimeout(r, 700));
+      out = { ok: true, ref: "MT-PREVIEW-001" };
+    }
+    if (!out.ok) throw new Error(out.error || "Server error");
+    document.getElementById("refNo").textContent = out.ref;
+    document.getElementById("doneEmail").textContent = payload.email;
+    document.getElementById("formSection").style.display = "none";
+    document.getElementById("done").classList.add("show");
+    window.scrollTo({ top: document.querySelector("main").offsetTop - 8, behavior: "smooth" });
+  } catch(err){
+    document.getElementById("err-submit").classList.add("show");
+    btn.disabled = false; btn.textContent = "Request enrollment";
+  }
+});
+
+if (!LIVE) { const f = document.createElement("div"); f.className = "preview-flag"; f.textContent = "PREVIEW, NOTHING IS SENT"; document.body.appendChild(f); }
+</script>
+</body>
+</html>
